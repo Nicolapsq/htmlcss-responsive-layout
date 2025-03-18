@@ -88,12 +88,12 @@ ul{
 
  /* MAIN */
 
- main .row{
+main .row{
     display: flex;
     flex-direction: column;
  }
 
-.dolce .container{
+.container{
     padding: 0 1rem;
     max-width: 640px;
     background-color: lightgray;
@@ -132,17 +132,121 @@ ul{
     margin-top: -5px;
  }
 
+ .social .row{
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2rem 0;
+    font-size: 2rem;
+ }
+
+ .social .row .col{
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 20px;
+ }
+
+ /* TABLET */
+
  @media screen and ( min-width: 1019px ) {
 
-    .dolce .container{
+    .container{
         max-width: 1019px;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
+    .dolce h2{
+        font-size: 2rem;
+    }
+
+    .dolce .categoria{
+        align-self: self-start;
+     }
+
+     .dolce span{
+        display: inline-block;
+     }
+
     .dolce .row{
         max-width: 755px;
+    }
+
+    .dolce .row .col:last-child{
+        height: auto;
+    }
+
+    .dolce .col .row{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .dolce .col .row .col{
+        width: calc(100% / 3);
+    }
+
+    .social .row{
+        display: flex;
+    }
+
+    .social .row .col{
+        margin: 0 0.5rem;
+        padding: 0 3rem;
+        flex-grow: 1;
+    }
+}
+
+/* DESKTOP */
+
+
+@media screen and ( min-width: 1600px ) {
+    
+    main{
+        background-color: lightgray;
+    }
+  
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dolce h2{
+        font-size: 3rem;
+    }
+
+    .dolce .row{
+        max-width: 100%;
+        flex-direction: row;
+    }
+
+    .dolce .row .col.col-60{
+        width: 65%;
+    }
+
+    .dolce .row .col.col-40{
+        width: 35%;
+        margin-top: 0;
+        padding-left: 0;
+    }
+
+    .social .row .col{
+        padding: 0 5rem;
+        flex-grow: 1;
+    }
+
+    .dolce .col .row{
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .dolce .col .row .col{
+        width: 100%;
+        padding: 0.5rem 0;
+        padding-left: 1rem;
     }
 
 }
