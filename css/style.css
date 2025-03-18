@@ -37,24 +37,24 @@ ul{
 
 } */
 
-.wrapper{
-    min-height: 100vh;  /* l'unita di misura "vh" va ad indicare una parte della finestra che visualizziamo sul monitor. 1vh è un centesimo di finestra, quindi 100vh è tutta la finestra. con il "min" avanti gli diciamo di prendere ALMENO tutta la finestra. se la pagina dovra scrollare con min-height non avremo problemi */
+/* .wrapper{
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-}
+} */
 
-.row{
+/* .row{
     display: flex;
     flex-wrap: wrap;
     row-gap: 2rem;
     margin-left: -1rem;
     margin-right: -1rem;
-}
+} */
 
-[class*='col']{
+/* [class*='col']{
     padding-left: 1rem;
     padding-right: 1rem;
-}
+} */
 
 .col-1-2{
     width: calc(100% / 2);
@@ -88,6 +88,61 @@ ul{
 
  /* MAIN */
 
- main{
-    background-color: lightgray;
+ main .row{
+    display: flex;
+    flex-direction: column;
  }
+
+.dolce .container{
+    padding: 0 1rem;
+    max-width: 640px;
+    background-color: lightgray;
+}
+
+ .dolce .categoria{
+    padding-top: 1rem;
+    padding-left: 1rem;
+ }
+
+ .dolce h2{
+    margin-bottom: 1rem;
+ }
+
+ .dolce span{
+    display: none;
+ }
+
+ .dolce h3{
+    padding: 2rem 0;
+    background-color: white;
+    padding-left: 1rem;
+ }
+
+ .dolce .col .row{
+    background-color: white;
+    min-height: 329px;
+    justify-content: space-around;
+ }
+
+ .dolce .row .col{
+    padding-left: 1rem;
+ }
+
+ .dolce .row .col:last-child{
+    margin-top: -5px;
+ }
+
+ @media screen and ( min-width: 1019px ) {
+
+    .dolce .container{
+        max-width: 1019px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dolce .row{
+        max-width: 755px;
+    }
+
+}
