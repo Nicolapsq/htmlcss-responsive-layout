@@ -178,7 +178,45 @@ main .row{
 
  .presentation p{
     padding: 1rem 0;
+    padding-bottom: 3rem;
  }
+
+ /* FOOTER */
+
+footer .container{
+    background-color: #7c69a4;
+}
+
+footer .row{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .row{
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    color: white;
+}
+
+footer .col{
+    padding: 0.5rem 0;
+}
+
+footer .col-bottom .row{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+footer .col-bottom .row .col{
+    text-align: center;
+    width: calc(100% / 4);
+}
+
+footer a{
+    color: white;
+}
+
 
  /* TABLET */
 
