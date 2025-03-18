@@ -190,9 +190,6 @@ footer .container{
 footer .row{
     display: flex;
     flex-direction: column;
-}
-
-footer .row{
     align-items: center;
     justify-content: center;
     padding: 1rem 0;
@@ -216,7 +213,6 @@ footer .col-bottom .row .col{
 footer a{
     color: white;
 }
-
 
  /* TABLET */
 
@@ -276,10 +272,13 @@ footer a{
     .presentation img{
         width: 60%;
      }
+
+     footer .col-bottom .row .col{
+        width: calc(100% / 5);
+    }
 }
 
 /* DESKTOP */
-
 
 @media screen and ( min-width: 1600px ) {
     
@@ -288,7 +287,7 @@ footer a{
     }
   
     .container{
-        max-width: 1200px;
+        max-width: 100%;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
@@ -337,5 +336,16 @@ footer a{
     .presentation img{
         width: 50%;
      }
+
+     footer .row{
+     width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+
+    footer .col-top .row{
+    flex-direction: column;
+    align-items: flex-start;
+    }
 
 }
