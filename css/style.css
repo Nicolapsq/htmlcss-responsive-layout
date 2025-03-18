@@ -88,6 +88,8 @@ ul{
 
  /* MAIN */
 
+ /* SECTION 1 */
+
 main .row{
     display: flex;
     flex-direction: column;
@@ -106,6 +108,7 @@ main .row{
 
  .dolce h2{
     margin-bottom: 1rem;
+    font-size: 2rem;
  }
 
  .dolce span{
@@ -132,6 +135,8 @@ main .row{
     margin-top: -5px;
  }
 
+ /* SECTION 2 */
+
  .social .row{
     flex-direction: row;
     justify-content: space-around;
@@ -143,6 +148,36 @@ main .row{
     padding: 5px 10px;
     background-color: white;
     border-radius: 20px;
+ }
+
+ .social .banner{
+    display: none;
+ }
+
+ /* SECTION 3 */
+
+ .presentation h2{
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+ }
+
+ .presentation .border{
+    border: 1px solid orange;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    width: 4rem;
+ }
+
+ .presentation img{
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+ }
+
+ .presentation p{
+    padding: 1rem 0;
  }
 
  /* TABLET */
@@ -195,6 +230,14 @@ main .row{
         padding: 0 3rem;
         flex-grow: 1;
     }
+
+    .social .banner{
+        display: block;
+     }
+
+    .presentation img{
+        width: 60%;
+     }
 }
 
 /* DESKTOP */
@@ -232,21 +275,29 @@ main .row{
         margin-top: 0;
         padding-left: 0;
     }
-
-    .social .row .col{
-        padding: 0 5rem;
-        flex-grow: 1;
-    }
-
+    
     .dolce .col .row{
         flex-direction: row;
         justify-content: flex-start;
     }
-
+    
     .dolce .col .row .col{
         width: 100%;
         padding: 0.5rem 0;
         padding-left: 1rem;
     }
+    
+    .social .row .col{
+        padding: 0 5rem;
+        flex-grow: 1;
+    }
+
+    .social .banner{
+        display: block;
+     }
+
+    .presentation img{
+        width: 50%;
+     }
 
 }
